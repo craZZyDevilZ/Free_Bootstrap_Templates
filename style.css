@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+
+
+:root {
+	--dark-brown: #3e2723;
+	--light-brown: #5d4037;
+	--light-grey: #f5f5f5;
+	--dark-grey: #212121;
+	--nav-bg: #3AC9E5;
+	--warm-white: #f1f1f1;
+	--orange: #9D4740;
+	--danger: #dc3545;
+}
+
+html, body {
+	background-color: var(--warm-white);
+	width: 100%;
+	height: 100%;
+}
+.warning {
+	background-color: var(--nav-bg) !important;
+}
+.navbar-brand {
+	font-size: 2rem;
+	color: var(--dark-brown) !important;
+	font-family: 'pacifico', sans-serif;
+	font-weight: bold;
+}
+.navbar-brand:hover {
+	color: var(--light-brown) !important;
+}
+.navbar-nav li a {
+	font-size: 1.3rem;
+	margin-right: 1.8rem;
+	font-family: 'Kaushan Script', cursive;
+	color: var(--dark-grey) !important;
+}
+.navbar-nav li a:hover {
+	color: var(--light-brown) !important;
+}
+.dropdown-item {
+	font-size: 0.6rem;
+	transition: .35s;
+}
+.dropdown-item:hover {
+	background-color: var(--nav-bg) !important;
+}
+
+/* Jumbotron*/
+.jumbotron {
+	background-image: url(img/jumbotron.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: calc(100vh - 58px);
+	position: relative;
+}
+.jumbotron-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.jumbotron-content h1 {
+	text-shadow: 0px 0px 5px var(--warm-white);
+	font-size: 2.5rem;
+}
+.jumbotron-navbar-brand {
+	font-size: 3rem;
+	color: var(--dark-brown) !important;
+	font-family: 'pacifico', sans-serif;
+	font-weight: bold;
+}
+.jumbotron-content p {
+	text-shadow: 0.5px 0.5px 0.1px var(--warm-white);
+}
+
+/* About us*/
+.about-us-container {
+	background-color: var(--light-grey);
+}
+.about-us-content h3{
+	color: var(--orange);
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 2.5rem;
+}
+.about-us-content .lead {
+	color: var(--dark-brown) !important;
+	font-size: 1rem;
+}
+.about-us-content .btn {
+	color: var(--light-grey) !important;
+}
+.about-us-content .btn:hover {
+	background-color: var(--orange) !important;
+	color: var(--dark-brown) !important;
+}
+
+/* Our Services*/
+.services {
+	border-top: 1.5px solid #E5E8DF !important;
+}
+.services h1 span{
+	border-bottom: 1.5px solid var(--nav-bg);
+	font-family: 'Pacifico', sans-serif;
+	margin: 5rem;
+	transition: .35s;
+}
+.services h1 span:hover {
+	padding-bottom: 1rem;
+	color: var(--nav-bg);
+	text-shadow: 1px 0px 2px var(--dark-brown);
+}
+.three-col-container h3{
+	font-family: 'Dancing Script', sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+}
+.three-col-container i {
+	transition: .35s;
+}
+.three-col-container .service-conatiner {
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+.three-col-container .service-conatiner:hover i{
+	transform: scale(1.2,1.2);
+	color: var(--danger) !important;
+}
+.three-col-container p {
+	font-family: 'patua one', sans-serif;
+	margin-bottom: 0;
+}
+
+/* Section Info*/
+.section-info {
+	width: 100%;
+	color: var(--light-grey);
+	background-color: var(--dark-brown);
+	/*background-color: #C59062;*/
+}
+
+/* Team */
+.team {
+	border-top: 1.5px solid #E5E8DF !important;
+}
+.team h1 span{
+	border-bottom: 1.5px solid var(--nav-bg);
+	font-family: 'Pacifico', sans-serif;
+	margin: 5rem;
+	transition: .35s;
+}
+.team h1 span:hover {
+	padding-bottom: 1rem;
+	color: var(--nav-bg);
+	text-shadow: 1px 0px 2px var(--dark-brown);
+}
+.card {
+	padding: 0.5em;
+	padding-bottom: 0;
+}
+.card h3 {
+	color: var(--danger);
+}
+.card p.card-text {
+	color: var(--orange);
+}
+
+/* Contact Us*/
+
+.contact-container {
+	background-color: #E5E8DF;
+	border-top: 1.5px solid #999 !important;
+	border-bottom: 1.5px solid #999 !important;
+}
+.contact h1 span{
+	border-bottom: 1.5px solid var(--nav-bg);
+	font-family: 'Pacifico', sans-serif;
+	margin: 5rem;
+	transition: .35s;
+}
+.contact h1 span:hover {
+	padding-bottom: 1rem;
+	color: var(--nav-bg);
+	text-shadow: 1px 0px 2px var(--dark-brown);
+}
+
+/* Connect */
+.connect {
+	background-color: var(--light-grey);
+}
+.connect h1 span{
+	border-bottom: 1.5px solid var(--orange);
+	font-family: 'Pacifico', sans-serif;
+	margin: 5rem;
+	transition: .35s;
+}
+.connect h1 span:hover {
+	padding-bottom: 1rem;
+	color: var(--orange);
+	text-shadow: 1px 0px 2px var(--dark-brown);
+}
+.fa-facebook-square, .fa-twitter-square, .fa-google-plus-g, .fa-instagram, .fa-youtube {
+	color: var(--dark-grey);
+	transition: .5s;
+}
+.fa-facebook-square:hover {
+	color: #3b5998;
+}
+.fa-twitter-square:hover {
+	color: #00aced;
+}
+.fa-google-plus-g:hover {
+	color: #dd4b39;
+}
+.fa-instagram:hover {
+	color: #517fa8;
+}
+.fa-youtube:hover {
+	color: #bb0000;
+}
+
+/* Footer */
+/*footer {
+	background-color: var(--orange);
+}
+.nav-brand-footer {
+	color: #111 !important;
+	margin-top: 2.5em;
+}
+.nav-brand-footer:hover {
+	color: #000 !important;
+}
+footer .address {
+	padding-bottom: 0 !important;
+}
+footer .address .lead {
+	padding-left: .5rem;
+}
+footer h3 {
+	border-bottom: 1.5px solid var(--light-brown);
+}*/
+.copyright {
+	background-color: var(--danger);
+}
+.copyright p {
+	font-size: 1em;
+	color: var(--warm-white);
+}
+.copyright a{
+	color: var(--warm-white);
+}
+
+
+/* Media Queries*/
+@media (max-width: 1200px) {
+	form {
+		width: 70% !important;
+		/*display: none;*/
+	}
+}
+
+@media (max-width: 992px) {
+
+	/* About Us */
+	.about-us-content h3{
+		font-size: 2rem;
+	}
+	.about-us-content .lead {
+		font-size: 0.98rem;
+	}
+	
+	/* Connect */
+	.connect h1 span{
+		margin: 5rem;
+	}
+	.connect h1 span:hover {
+		padding-bottom: .5rem;
+	}
+	.social i {
+		font-size: 3.5rem;
+	}
+
+	form {
+		width: 80% !important;
+	}
+
+}
+
+@media (max-width: 768px) {
+	
+	/* Jumbotron*/
+	.jumbotron-navbar-brand {
+		font-size: 3rem;
+		color: var(--dark-brown) !important;
+		font-family: 'pacifico', sans-serif;
+		font-weight: bold;
+		line-height: 5rem;
+	}
+	.fa-bars {
+		font-size: 2rem;
+	}
+	.about-us-container {
+		background-color: var(--light-grey);
+		border-bottom: 1.5px solid #E5E8DF !important;
+		padding-bottom: 1.2rem;
+	}
+	.about-us-content {
+		padding: 1rem;
+		border-right: 1.5px solid #E5E8DF !important;
+		border-bottom: 1.5px solid #E5E8DF !important;
+		border-left: 1.5px solid #E5E8DF !important;
+	}
+
+	.services {
+		border-top: none !important;
+	}
+	
+	.card {
+		padding: 0.7em;
+		margin-bottom: 1rem;
+	}
+	
+	form {
+		width: 85% !important;
+	}
+
+	.connect {
+		display: none;
+	}
+	
+	.copyright p {
+		font-size: 0.9em;
+	}
+
+}
+
+@media (max-width: 576px) {
+	
+	.navbar-brand {
+		margin-left: 1rem;
+	}
+	.navbar-toggler {
+		margin-right: 1rem;
+	}
+	.nav-item {
+		text-align: center;
+	}
+	.nav-link {
+		margin-left: 1.2rem !important;
+	}
+	.jumbotron-content p {
+		font-size: 1rem;
+	}
+	.contact-container h1 {
+		font-size: 2.4rem;
+	}
+	.team h1 span{
+		margin: 0rem;
+	}
+	
+	form {
+		width: 90% !important;
+	}
+
+	.connect {
+		display: none;
+	}
+	
+	.copyright p {
+		font-size: 0.7em;
+	}
+
+}
+
+@media (max-width: 425px) {
+
+	.navbar-brand {
+		font-size: 1.2rem;
+		margin-left: .5rem;
+	}
+	.navbar-toggler {
+		margin-right: 0.5rem;
+	}
+	.fa-bars {
+		font-size: 1.2rem;
+	}
+	.nav-item {
+		text-align: center;
+	}
+	.nav-link {
+		font-size: 1.2rem !important;
+	}
+	.jumbotron-navbar-brand {
+		font-size: 2.25rem;
+	}
+	.about-us-content {
+		padding-top: .5rem;
+	}
+	.about-us-content h3{
+		font-size: 2rem;
+		/*margin: 0;*/
+	}
+	.about-us-content .lead {
+		font-size: 0.8rem;
+	}
+	.about-us-content .btn {
+		font-size: 0.7rem;
+	}
+	.services h1 {
+		margin-top: 0.3rem !important;
+	}
+	.services h1 span {
+		font-size: 1.8rem;
+		margin: 0;
+		margin-top: .5rem !important;
+	}
+	.service-conatiner i {
+		font-size: 3rem;
+	}
+	.three-col-container h3 {
+		font-size: 1.5rem;
+	}
+	.service-conatiner p.small {
+		font-size: 0.9rem;
+	}
+	.section-info {
+		font-size: .75rem;
+	}
+	.team h1 {
+		font-size: 1.8rem;
+		margin: 0;
+	}
+	.card-body {
+		padding: 0.9rem;
+	}
+	.card-title {
+		font-size: 1.4rem;
+		margin-bottom: 0.4rem;
+	}
+	.card-text {
+		font-size: .8rem;
+		margin-bottom: 0.5rem;
+	}
+	.card p.small {
+		font-size: .75rem;
+	}
+	.contact-container h1 span {
+		font-size: 1.8rem;
+		margin: 0;
+	}
+	.contact-container form {
+		margin-bottom: 1.2rem !important;
+		padding: 1rem !important;
+	}
+}
